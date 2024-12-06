@@ -1,0 +1,12 @@
+Arrow Function:
+
+Pros: It lexically binds this to the surrounding context, useful in callbacks or closures.
+
+Cons: Cannot be used as methods because 'this' does not refer to the object. It refers to the outer scope.
+
+
+Regular Function:
+
+Pros: Correctly binds 'this' to the object when used as methods, making them ideal for object methods.
+
+Cons: 'this' can be lost if the method is passed around as a callback. It may require .bind(this) or an arrow function to preserve 'this'.
